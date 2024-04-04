@@ -7,7 +7,7 @@ import pyautogui
 import random
 import time
 
-openai.api_key = "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"
+openai.api_key = "Put here your openai api key!"
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -17,15 +17,15 @@ r = sr.Recognizer()
 mic = sr.Microphone(device_index=1)
 
 conversation = ""
-user_name = "zahra"
-bot_name = "zohal"
+user_name = "Yourname"
+bot_name = "YournameBot"
 
 while True:
     with mic as source:
-        print("dar hal goosh kardan...")
+        print("Kara is Here Speak!")
         r.adjust_for_ambient_noise(source, duration=0.1)
         audio = r.listen(source)
-    print("nashnidam yebar dige bego\n")
+    print("Sir Can You Say It Again Please?\n")
     try:
         user_input = r.recognize_google(audio)
     except:
@@ -48,11 +48,11 @@ while True:
         response_str = f"Searching for {search_query} on YouTube."
 
     elif "shutdown my pc" in user_input.lower():
-        os.system("shutdown /s /t 1")  # دستور برای خاموش کردن سیستم
+        os.system("shutdown /s /t 1")  
         response_str = "Shutting down the PC."
 
     if "open cmd" in user_input.lower():
-        os.system("start cmd")  # دستور برای باز کردن CMD
+        os.system("start cmd") 
         response_str = "Opening CMD."
 
     elif "type" in user_input.lower():
@@ -73,7 +73,7 @@ while True:
             x, y = random.randint(100, 500), random.randint(100, 500)
             pyautogui.moveTo(x, y, duration=0.2)
             time.sleep(0.2)
-            response_str = "shut up mother fucker get the fuck off bitch this is my computer not even yours"
+            response_str = "shut up this is my computer not even yours hahaha"
             webbrowser.open("https://piv.pivpiv.dk/")
 
     else:
