@@ -1,5 +1,5 @@
 # Kara-Ai
- <h1 align="center">LasterBomber- Discord : lasterfor3ver</h1>
+ <h1 align="center"> Discord : 357r</h1>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
